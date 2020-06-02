@@ -1,0 +1,22 @@
+.bio {
+  padding: 12px;
+}
+.bio-image {
+  float: left;
+  width: 500px;
+  height: auto;
+  margin : 12px;
+}
+.bio-text {
+  padding: 12px;
+  line-height: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .bio-image{
+    width: 320px;
+    float: none;
+    display: block;
+    margin: auto;
+  }
+}
