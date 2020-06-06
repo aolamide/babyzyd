@@ -2,7 +2,7 @@ body, html {
   padding: 0;
   margin: 0;
   font-family: 'Josefin Sans', sans-serif;
-  color: white;
+  color: #eeeeee;
   scroll-behavior: smooth;
 }
 a{
@@ -16,6 +16,11 @@ button {
 }
 button:hover{
   cursor: pointer;
+}
+.section {
+  background-color: #222831;
+  padding: 15px;
+  padding-top: 50px;
 }
 .center {
   text-align: center;
@@ -32,7 +37,7 @@ ul {
   z-index: 10;
 }
 .nav.scrollNav {
-  background-color: tomato;
+  background-color: #32e0c4;
 }
 .nav ul {
   padding-top: 10px;
@@ -42,7 +47,6 @@ ul {
   font-weight: bold;
   font-size : 20px;
   color: white;
-  /* padding: 8px; */
   border-bottom: 2px solid white;
 }
 .close-nav{
@@ -62,8 +66,8 @@ ul {
   color: white;
   padding: 10px;
 }
-.nav li a:hover {
-  background-color: red;
+.nav li a:hover, .nav-mobile li a:hover {
+  text-decoration: underline;
 }
 .nav-mobile {
   display: none;
@@ -71,11 +75,13 @@ ul {
   top: 0;
   width: 100vw;
   height: 100vh;
-  /* display: flex; */
   justify-content: center;
   align-items: center;
-  background-color: black;
+  background-color: #222831;
   z-index: 20;
+}
+.nav-mobile li a {
+  color: #32e0c4;
 }
 .nav-mobile ul li{
   padding: 30px;
@@ -84,10 +90,9 @@ ul {
   font-size: 24px;
 }
 .landing-page {
-  background-image: url(images/muiz.jpg);
+  background-image: url(assets/images/muiz.jpg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  /* width: 100vw; */
   height: 100vh;
 }
 .mask {
@@ -108,15 +113,75 @@ ul {
 }
 .socials i{
   color: #716464;
-  font-size: 1.5em;
+  font-size: 1.7em;
   padding: 10px;
 }
 .socials i:hover{
   color: white;
 }
+
+/* MUSIC/VIDEOS */
+.music-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.music-box {
+  width: 410px;
+  height: 410px;
+  background-image: url(http://placehold.it/300x300);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 10px;
+}
+.music-info {
+  background-color: rgba(0, 0, 0, 0.65);
+  text-align: center;
+  padding: 1px;
+}
+.music-links i {
+  color: #716464;
+  padding: 0 6px;
+}
+
+.music-links i:hover {
+  color: white;
+}
+.music-type{
+  display: inline;
+  margin-left: 5px;
+  padding: 8px;
+}
+.type-video {
+  background-color: teal;
+}
+.type-music {
+  background-color: orangered;
+}
+.type-lyrics {
+  background-color: peru;
+}
+/* SOCIALS */
+header {
+  text-align: center;
+  color: white;
+  letter-spacing: 8px;
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 20px auto;
+}
+.twitter-box {
+  width: 80vw;
+  margin : auto;
+  max-width: 700px;
+}
+
+/* FOOTER */
 .footer {
   color: white;
-  background-color: black;
+  background-color: #393e46;
   padding: 25px;
   display: flex;
   justify-content: space-between;
@@ -134,27 +199,16 @@ ul {
   background-color: black;
   padding: 10px;
 }
-
-
-/* SOCIALS */
-.section {
-  background-color: black;
-  padding: 15px;
-  padding-top: 50px;
+.copyright a {
+  color: #888;
+  text-decoration: underline;
 }
-header {
-  text-align: center;
-  color: white;
-  letter-spacing: 8px;
-  font-weight: bold;
-  font-size: 2rem;
-  margin: 20px auto;
-}
-.twitter-box {
-  width: 80vw;
-  margin : auto;
-  max-width: 700px;
-}
+@media screen and (max-width : 468px) {
+  .music-box {
+    width: 320px;
+    height: 320px;
+  }
+} 
 @media screen and (max-width:768px) {
   .menu-toggle {
     display: inline;
