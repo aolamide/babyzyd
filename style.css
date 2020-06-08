@@ -130,7 +130,7 @@ ul {
 .music-box {
   width: 410px;
   height: 410px;
-  background-image: url(http://placehold.it/300x300);
+  background-image: url(https://placehold.it/300x300);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
