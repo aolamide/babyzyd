@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bokings | Baby Zyd</title>
+  <meta name="description" content="Make bookings and enquiries for Babyzyd [Muiz Raji]. Babyzyd is an artiste and songwriter. A musician that wants to use his songs to influence people">
+  <meta name="keywords" content="music,bio, artiste, nigerian, songwriter, lyyrics, songs, babyzyd, muiz raji, muiz, book, bookings">
+  <meta name="og:title" content="Bookings | BabyZyd" />
+  <meta
+    name="og:description"
+    content="Make bookings and enquiries for Babyzyd [Muiz Raji]. Babyzyd is an artiste and songwriter. A musician that wants to use his songs to influence people"
+  />
+  <meta
+    property="og:image"
+    content="/assets/images/muiz.jpg"
+  />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Josefin+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <style>
+    header {
+      margin: 30px 0;
+    }
+    p{
+      margin: 10px 0;
+    }
+    p.or {
+      margin: 30px 0;
+    }
+    p.email {
+      color: khaki;
+    }
+    .booking-area {
+      width: 700px;
+      margin: auto;
+      text-align: center;
+      font-size: 1.6rem;
+    }
+    .form-control {
+      width: 100%;
+    }
+    .form-control input, .form-control textarea {
+      width: 100%;
+      padding: 12px;
+      box-sizing: border-box;
+      margin-bottom: 15px;
+      background-color: #eeeeee;
+      border: 2px solid #222831;
+      border-radius: 8px;
+    }
+    .form-btn {
+      color: white;
+      background-color: #32e0c4;
+      padding: 15px 20px;
+      font-weight: bold;
+      font-size: 1.2rem;
+      border-radius: 8px;
+    }
+    .form-btn:disabled{
+      cursor: not-allowed;
+    }
+    .error {
+      color: red;
+      font-size: 1rem;
+    }
+    .success {
+      color: green;
+      font-size: 1rem;
+    }
+    @media screen and (max-width: 768px) {
+      .booking-area {
+        width: 80vw;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <ul>
+      <li><a href="/">HOME</a></li>
+      <li><a href="/#music">MUSIC/VIDEO</a></li>
+      <li><a href="#follow">FOLLOW</a></li>
+      <li><a href="/photos">PHOTOS</a></li>
+      <li><a href="/bio">BIO</a></li>
+      <li><a href="#">BOOK/CONTACT</a></li>
+      <li><button class="menu-toggle">MENU</button></li>
+    </ul>
+  </nav>
+  <div class="nav-mobile">
+    <button class="close-nav">X</button>
+    <ul>
+      <li><a href="/">HOME</a></li>
+      <li><a href="/#music">MUSIC/VIDEO</a></li>
+      <li><a href="#follow">FOLLOW</a></li>
+      <li><a href="/photos">PHOTOS</a></li>
+      <li><a href="/bio">BIO</a></li>
+      <li><a href="#">BOOK/CONTACT</a></li>
+    </ul>
+  </div>
+  <section class="bookings section">
+    <header>BOOKINGS</header>
+    <div class="booking-area">
+      <p>Reach out to BabyZyd Management on : </p>
+      <p class="email">bookings@babyzyd.com</p>
+      <p class="or"><strong>OR</strong></p>
+      <p>Fill form below</p>
+      <form>
+        <div class="form-control"><input name="name" placeholder="Name/Organisation" type="text"></div>
+        <div class="form-control"><input name="email" placeholder="Email" type="email"></div>
+        <div class="form-control"><textarea name="message" rows="8" placeholder="Enquiries/Message"></textarea></div>
+        <button class="form-btn">SEND</button>
+      </form>
+      <p class="error"></p>
+      <p class="success"></p>
+    </div>
+  </section>
+  <footer class="footer" id="follow">
+    <div>
+      <h2>BabyZyd</h2>
+    </div>
+    <div class="socials">
+      <h6 style="display: inline; margin: 0;">FOLLOW</h6>
+      <a href="#" title="Soundcloud"><i class="fa fa-soundcloud"></i></a>
+      <a href="https://www.instagram.com/muizzyd/" title="Follow on Instagram"><i class="fa fa-instagram"></i></a>
+      <a href="https://www.youtube.com/channel/UCYBYTZtvbzBp7AdPwxWgXkg" title="Follow on YouTube"><i class="fa fa-youtube-play"></i></a>
+      <a href="#" title="Follow on Twitter"><i class="fa fa-twitter"></i></a>
+      <a href="#" title="Apple Music"><i class="fa fa-apple"></i></a>
+    </div>
+  </footer>
+  <div class="copyright">
+    &copy; BabyZyd 2020.<br> Website developed by <a rel="noopener noreferer" href="https://aolamide.tech">Olamide Aboyeji</a>
+  </div>
+  <script src="../main.js"></script>
+  <script src="main.js"></script>
+</body>
