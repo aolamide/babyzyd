@@ -131,15 +131,24 @@ ul {
   width: 410px;
   height: 410px;
   background-image: url(https://placehold.it/300x300);
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin: 10px;
 }
+.music-box a i {
+  color: burlywood;
+}
 .music-info {
-  background-color: rgba(0, 0, 0, 0.65);
+  background-color: rgba(0, 0, 0, 0.7);
   text-align: center;
   padding: 1px;
+}
+.music-info p {
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 0;
 }
 .music-links i {
   color: #716464;
