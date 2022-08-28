@@ -90,7 +90,7 @@ ul {
   font-size: 24px;
 }
 .landing-page {
-  background-image: url(assets/images/muiz.jpg);
+  background-image: url(assets/images/muiz-new.jpeg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   height: 100vh;
@@ -112,7 +112,7 @@ ul {
   transform: rotate(-5deg);
 }
 .socials i{
-  color: #716464;
+  color: #cec5c5;
   font-size: 1.7em;
   padding: 10px;
 }
@@ -217,7 +217,7 @@ header {
     width: 320px;
     height: 320px;
   }
-} 
+}
 @media screen and (max-width:768px) {
   .menu-toggle {
     display: inline;
